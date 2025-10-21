@@ -3284,8 +3284,7 @@
             }
           },
           "required": [
-            "Type",
-            "Properties"
+            "Type"
           ]
         },
         {
@@ -3449,7 +3448,7 @@
     },
     "AWS_ServiceCatalog_ResourceUpdateConstraint": {
       "type": "object",
-      "markdownDescription": "Resource Type definition for AWS::ServiceCatalog::ResourceUpdateConstraint  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-resourceupdateconstraint.html)",
+      "markdownDescription": "Resource type definition for AWS::ServiceCatalog::ResourceUpdateConstraint  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-resourceupdateconstraint.html)",
       "allOf": [
         {
           "type": "object",
@@ -3460,7 +3459,7 @@
                 "AWS::ServiceCatalog::ResourceUpdateConstraint"
               ],
               "markdownEnumDescriptions": [
-                "Resource Type definition for AWS::ServiceCatalog::ResourceUpdateConstraint  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-resourceupdateconstraint.html)"
+                "Resource type definition for AWS::ServiceCatalog::ResourceUpdateConstraint  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-resourceupdateconstraint.html)"
               ]
             },
             "Properties": {
@@ -12220,7 +12219,8 @@
             }
           },
           "required": [
-            "Type"
+            "Type",
+            "Properties"
           ]
         },
         {
@@ -13483,6 +13483,37 @@
             },
             "Properties": {
               "$ref": "resources/aws-kms-alias.json"
+            }
+          },
+          "required": [
+            "Type",
+            "Properties"
+          ]
+        },
+        {
+          "$ref": "resource.attributes.schema.json#/definitions/ResourceAttributes"
+        }
+      ],
+      "additionalProperties": false
+    },
+    "AWS_ApplicationSignals_GroupingConfiguration": {
+      "type": "object",
+      "markdownDescription": "Resource Type definition for AWS::ApplicationSignals::GroupingConfiguration  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationsignals-groupingconfiguration.html)",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "Type": {
+              "type": "string",
+              "enum": [
+                "AWS::ApplicationSignals::GroupingConfiguration"
+              ],
+              "markdownEnumDescriptions": [
+                "Resource Type definition for AWS::ApplicationSignals::GroupingConfiguration  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationsignals-groupingconfiguration.html)"
+              ]
+            },
+            "Properties": {
+              "$ref": "resources/aws-applicationsignals-groupingconfiguration.json"
             }
           },
           "required": [
@@ -19516,6 +19547,37 @@
       ],
       "additionalProperties": false
     },
+    "AWS_Lightsail_DiskSnapshot": {
+      "type": "object",
+      "markdownDescription": "Resource Type definition for AWS::Lightsail::DiskSnapshot  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lightsail-disksnapshot.html)",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "Type": {
+              "type": "string",
+              "enum": [
+                "AWS::Lightsail::DiskSnapshot"
+              ],
+              "markdownEnumDescriptions": [
+                "Resource Type definition for AWS::Lightsail::DiskSnapshot  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lightsail-disksnapshot.html)"
+              ]
+            },
+            "Properties": {
+              "$ref": "resources/aws-lightsail-disksnapshot.json"
+            }
+          },
+          "required": [
+            "Type",
+            "Properties"
+          ]
+        },
+        {
+          "$ref": "resource.attributes.schema.json#/definitions/ResourceAttributes"
+        }
+      ],
+      "additionalProperties": false
+    },
     "AWS_ApiGateway_Method": {
       "type": "object",
       "markdownDescription": "The ``AWS::ApiGateway::Method`` resource creates API Gateway methods that define the parameters and body that clients must send in their requests.  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html)",
@@ -24978,6 +25040,37 @@
       ],
       "additionalProperties": false
     },
+    "AWS_BedrockAgentCore_Gateway": {
+      "type": "object",
+      "markdownDescription": "Definition of AWS::BedrockAgentCore::Gateway Resource Type  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-bedrockagentcore-gateway.html)",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "Type": {
+              "type": "string",
+              "enum": [
+                "AWS::BedrockAgentCore::Gateway"
+              ],
+              "markdownEnumDescriptions": [
+                "Definition of AWS::BedrockAgentCore::Gateway Resource Type  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-bedrockagentcore-gateway.html)"
+              ]
+            },
+            "Properties": {
+              "$ref": "resources/aws-bedrockagentcore-gateway.json"
+            }
+          },
+          "required": [
+            "Type",
+            "Properties"
+          ]
+        },
+        {
+          "$ref": "resource.attributes.schema.json#/definitions/ResourceAttributes"
+        }
+      ],
+      "additionalProperties": false
+    },
     "AWS_MemoryDB_User": {
       "type": "object",
       "markdownDescription": "Resource Type definition for AWS::MemoryDB::User  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-memorydb-user.html)",
@@ -26835,7 +26928,7 @@
     },
     "AWS_VpcLattice_ResourceGateway": {
       "type": "object",
-      "markdownDescription": "Creates a resource gateway for a service.   \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-vpclattice-resourcegateway.html)",
+      "markdownDescription": "Creates a resource gateway for a service.  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-vpclattice-resourcegateway.html)",
       "allOf": [
         {
           "type": "object",
@@ -26846,7 +26939,7 @@
                 "AWS::VpcLattice::ResourceGateway"
               ],
               "markdownEnumDescriptions": [
-                "Creates a resource gateway for a service.   \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-vpclattice-resourcegateway.html)"
+                "Creates a resource gateway for a service.  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-vpclattice-resourcegateway.html)"
               ]
             },
             "Properties": {
@@ -31248,6 +31341,37 @@
       ],
       "additionalProperties": false
     },
+    "AWS_BedrockAgentCore_GatewayTarget": {
+      "type": "object",
+      "markdownDescription": "Definition of AWS::BedrockAgentCore::GatewayTarget Resource Type  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-bedrockagentcore-gatewaytarget.html)",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "Type": {
+              "type": "string",
+              "enum": [
+                "AWS::BedrockAgentCore::GatewayTarget"
+              ],
+              "markdownEnumDescriptions": [
+                "Definition of AWS::BedrockAgentCore::GatewayTarget Resource Type  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-bedrockagentcore-gatewaytarget.html)"
+              ]
+            },
+            "Properties": {
+              "$ref": "resources/aws-bedrockagentcore-gatewaytarget.json"
+            }
+          },
+          "required": [
+            "Type",
+            "Properties"
+          ]
+        },
+        {
+          "$ref": "resource.attributes.schema.json#/definitions/ResourceAttributes"
+        }
+      ],
+      "additionalProperties": false
+    },
     "AWS_RAM_ResourceShare": {
       "type": "object",
       "markdownDescription": "Resource type definition for AWS::RAM::ResourceShare  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ram-resourceshare.html)",
@@ -32652,6 +32776,37 @@
             },
             "Properties": {
               "$ref": "resources/aws-iottwinmaker-scene.json"
+            }
+          },
+          "required": [
+            "Type",
+            "Properties"
+          ]
+        },
+        {
+          "$ref": "resource.attributes.schema.json#/definitions/ResourceAttributes"
+        }
+      ],
+      "additionalProperties": false
+    },
+    "AWS_SSMQuickSetup_LifecycleAutomation": {
+      "type": "object",
+      "markdownDescription": "Resource Type definition for AWS::SSMQuickSetup::LifecycleAutomation that executes SSM Automation documents in response to CloudFormation lifecycle events.  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssmquicksetup-lifecycleautomation.html)",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "Type": {
+              "type": "string",
+              "enum": [
+                "AWS::SSMQuickSetup::LifecycleAutomation"
+              ],
+              "markdownEnumDescriptions": [
+                "Resource Type definition for AWS::SSMQuickSetup::LifecycleAutomation that executes SSM Automation documents in response to CloudFormation lifecycle events.  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssmquicksetup-lifecycleautomation.html)"
+              ]
+            },
+            "Properties": {
+              "$ref": "resources/aws-ssmquicksetup-lifecycleautomation.json"
             }
           },
           "required": [
@@ -35781,7 +35936,7 @@
     },
     "AWS_CloudFront_PublicKey": {
       "type": "object",
-      "markdownDescription": "A public key that you can use with [signed URLs and signed cookies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PrivateContent.html), or with [field-level encryption](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html).  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-publickey.html)",
+      "markdownDescription": "A public key that you can use with [signed URLs and signed cookies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PrivateContent.html), or with [field-level encryption](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html).\n CloudFront supports signed URLs and signed cookies with RSA 2048 or ECDSA 256 key signatures. Field-level encryption is only compatible with RSA 2048 key signatures.  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-publickey.html)",
       "allOf": [
         {
           "type": "object",
@@ -35792,7 +35947,7 @@
                 "AWS::CloudFront::PublicKey"
               ],
               "markdownEnumDescriptions": [
-                "A public key that you can use with [signed URLs and signed cookies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PrivateContent.html), or with [field-level encryption](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html).  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-publickey.html)"
+                "A public key that you can use with [signed URLs and signed cookies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PrivateContent.html), or with [field-level encryption](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html).\n CloudFront supports signed URLs and signed cookies with RSA 2048 or ECDSA 256 key signatures. Field-level encryption is only compatible with RSA 2048 key signatures.  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-publickey.html)"
               ]
             },
             "Properties": {
@@ -36857,6 +37012,37 @@
       ],
       "additionalProperties": false
     },
+    "AWS_BedrockAgentCore_Memory": {
+      "type": "object",
+      "markdownDescription": "Resource Type definition for AWS::BedrockAgentCore::Memory  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-bedrockagentcore-memory.html)",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "Type": {
+              "type": "string",
+              "enum": [
+                "AWS::BedrockAgentCore::Memory"
+              ],
+              "markdownEnumDescriptions": [
+                "Resource Type definition for AWS::BedrockAgentCore::Memory  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-bedrockagentcore-memory.html)"
+              ]
+            },
+            "Properties": {
+              "$ref": "resources/aws-bedrockagentcore-memory.json"
+            }
+          },
+          "required": [
+            "Type",
+            "Properties"
+          ]
+        },
+        {
+          "$ref": "resource.attributes.schema.json#/definitions/ResourceAttributes"
+        }
+      ],
+      "additionalProperties": false
+    },
     "AWS_DataZone_EnvironmentBlueprintConfiguration": {
       "type": "object",
       "markdownDescription": "Definition of AWS::DataZone::EnvironmentBlueprintConfiguration Resource Type  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datazone-environmentblueprintconfiguration.html)",
@@ -37893,6 +38079,37 @@
             },
             "Properties": {
               "$ref": "resources/aws-ec2-route.json"
+            }
+          },
+          "required": [
+            "Type",
+            "Properties"
+          ]
+        },
+        {
+          "$ref": "resource.attributes.schema.json#/definitions/ResourceAttributes"
+        }
+      ],
+      "additionalProperties": false
+    },
+    "AWS_ObservabilityAdmin_OrganizationCentralizationRule": {
+      "type": "object",
+      "markdownDescription": "Resource schema for AWS:ObservabilityAdmin:OrganizationCentralizationRule  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-observabilityadmin-organizationcentralizationrule.html)",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "Type": {
+              "type": "string",
+              "enum": [
+                "AWS::ObservabilityAdmin::OrganizationCentralizationRule"
+              ],
+              "markdownEnumDescriptions": [
+                "Resource schema for AWS:ObservabilityAdmin:OrganizationCentralizationRule  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-observabilityadmin-organizationcentralizationrule.html)"
+              ]
+            },
+            "Properties": {
+              "$ref": "resources/aws-observabilityadmin-organizationcentralizationrule.json"
             }
           },
           "required": [
@@ -43576,6 +43793,37 @@
       ],
       "additionalProperties": false
     },
+    "AWS_APS_AnomalyDetector": {
+      "type": "object",
+      "markdownDescription": "AnomalyDetector schema for cloudformation.  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-aps-anomalydetector.html)",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "Type": {
+              "type": "string",
+              "enum": [
+                "AWS::APS::AnomalyDetector"
+              ],
+              "markdownEnumDescriptions": [
+                "AnomalyDetector schema for cloudformation.  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-aps-anomalydetector.html)"
+              ]
+            },
+            "Properties": {
+              "$ref": "resources/aws-aps-anomalydetector.json"
+            }
+          },
+          "required": [
+            "Type",
+            "Properties"
+          ]
+        },
+        {
+          "$ref": "resource.attributes.schema.json#/definitions/ResourceAttributes"
+        }
+      ],
+      "additionalProperties": false
+    },
     "AWS_NetworkManager_CustomerGatewayAssociation": {
       "type": "object",
       "markdownDescription": "The AWS::NetworkManager::CustomerGatewayAssociation type associates a customer gateway with a device and optionally, with a link.  \n[Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkmanager-customergatewayassociation.html)",
@@ -46535,6 +46783,9 @@
               "$ref": "#/definitions/AWS_KMS_Alias"
             },
             {
+              "$ref": "#/definitions/AWS_ApplicationSignals_GroupingConfiguration"
+            },
+            {
               "$ref": "#/definitions/AWS_ApiGatewayV2_ApiMapping"
             },
             {
@@ -47120,6 +47371,9 @@
               "$ref": "#/definitions/AWS_EC2_VPNGatewayRoutePropagation"
             },
             {
+              "$ref": "#/definitions/AWS_Lightsail_DiskSnapshot"
+            },
+            {
               "$ref": "#/definitions/AWS_ApiGateway_Method"
             },
             {
@@ -47649,6 +47903,9 @@
             },
             {
               "$ref": "#/definitions/AWS_EFS_FileSystem"
+            },
+            {
+              "$ref": "#/definitions/AWS_BedrockAgentCore_Gateway"
             },
             {
               "$ref": "#/definitions/AWS_MemoryDB_User"
@@ -48260,6 +48517,9 @@
               "$ref": "#/definitions/AWS_OpenSearchServerless_VpcEndpoint"
             },
             {
+              "$ref": "#/definitions/AWS_BedrockAgentCore_GatewayTarget"
+            },
+            {
               "$ref": "#/definitions/AWS_RAM_ResourceShare"
             },
             {
@@ -48396,6 +48656,9 @@
             },
             {
               "$ref": "#/definitions/AWS_IoTTwinMaker_Scene"
+            },
+            {
+              "$ref": "#/definitions/AWS_SSMQuickSetup_LifecycleAutomation"
             },
             {
               "$ref": "#/definitions/AWS_MediaPackageV2_OriginEndpointPolicy"
@@ -48806,6 +49069,9 @@
               "$ref": "#/definitions/AWS_MediaConnect_Flow"
             },
             {
+              "$ref": "#/definitions/AWS_BedrockAgentCore_Memory"
+            },
+            {
               "$ref": "#/definitions/AWS_DataZone_EnvironmentBlueprintConfiguration"
             },
             {
@@ -48906,6 +49172,9 @@
             },
             {
               "$ref": "#/definitions/AWS_EC2_Route"
+            },
+            {
+              "$ref": "#/definitions/AWS_ObservabilityAdmin_OrganizationCentralizationRule"
             },
             {
               "$ref": "#/definitions/AWS_EC2_IPAM"
@@ -49458,6 +49727,9 @@
             },
             {
               "$ref": "#/definitions/AWS_AmplifyUIBuilder_Theme"
+            },
+            {
+              "$ref": "#/definitions/AWS_APS_AnomalyDetector"
             },
             {
               "$ref": "#/definitions/AWS_NetworkManager_CustomerGatewayAssociation"
